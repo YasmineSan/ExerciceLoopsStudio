@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Lato:wght@100;300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100vw;
+    height: 650px;
+
+}
+
+.logo {
+    position: absolute;
+    top: 20px; 
+    left: 20px;
+    z-index: 3;
+}
+
+.img-header {
+
+    object-fit: cover;
+    min-width: 100vw;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    margin-top: 30px;
+    margin-right: 20px;
+    z-index: 3;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: 3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+h1 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 72px;
+    line-height: 70px;
+    letter-spacing: 0px;
+    text-align: left;
+    font-weight: 300;
+    z-index: 3;
+}
+
+.h1-box {
+    display: flex;
+    width: 570px;
+    height: 198px;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 266px;
+    left: 205px;
+    z-index: 3;
+}
